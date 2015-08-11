@@ -34,6 +34,14 @@ RUN apt-get -y install \
 RUN git clone https://github.com/sstephenson/rbenv.git ~/.rbenv
 RUN git clone https://github.com/sstephenson/ruby-build.git ~/.rbenv/plugins/ruby-build
 RUN /root/.rbenv/bin/rbenv install 2.2.2
-COPY bashrc_rbenv /tmp/
+COPY docker_config/bashrc_rbenv /tmp/
 RUN cat /tmp/bashrc_rbenv > ~/.bashrc
 RUN echo '2.2.2' > ~/.ruby-version
+
+RUN mkdir -p /app
+COPY app/Gemfile /app/Gemfile
+COPY app/Gemfile.lock /app/Gemfile.lock
+RUN cd /app && RBENV_ROOT=~/.rbenv RBENV_VERSION=2.2.2 ~/.rbenv/bin/rbenv exec gem install bundler
+RUN cd /app && RBENV_ROOT=~/.rbenv RBENV_VERSION=2.2.2 ~/.rbenv/bin/rbenv exec bundle install
+
+ADD app /app
