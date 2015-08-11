@@ -45,3 +45,5 @@ RUN cd /app && RBENV_ROOT=~/.rbenv RBENV_VERSION=2.2.2 ~/.rbenv/bin/rbenv exec g
 RUN cd /app && RBENV_ROOT=~/.rbenv RBENV_VERSION=2.2.2 ~/.rbenv/bin/rbenv exec bundle install
 
 ADD app /app
+
+CMD ["/app/run_ruboty.rb"]
