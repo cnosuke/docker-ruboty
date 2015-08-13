@@ -7,6 +7,5 @@ COPY app/Gemfile.lock /app/Gemfile.lock
 RUN cd /app && bundle install
 
 ADD app /app
-COPY app/env /app/.env
 
 CMD ["/app/run_ruboty.rb"]
