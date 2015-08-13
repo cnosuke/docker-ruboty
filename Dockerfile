@@ -8,4 +8,4 @@ RUN cd /app && bundle install
 
 ADD app /app
 
-CMD ["/app/run_ruboty.rb"]
+CMD ["/app/run_ruboty.sh"]
