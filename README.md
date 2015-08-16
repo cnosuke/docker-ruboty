@@ -28,3 +28,6 @@ EOF
 
 % docker run -d --link redis:db ruboty
 ```
+
+# LICENSE
+[MIT License](http://opensource.org/licenses/MIT).
