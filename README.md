@@ -20,9 +20,9 @@ COPY env /app/.env
 CMD ["/app/run_ruboty.rb"]
 EOF
 
-% curl https://raw.githubusercontent.com/cnosuke/docker-ruboty/master/app/env.sample -o .env
+% curl https://raw.githubusercontent.com/cnosuke/docker-ruboty/master/app/env.sample -o env
 
-% vi .env # Edit configurations to run Ruboty with ENV
+% vi env # Edit configurations to run Ruboty with ENV
 
 % docker build -t ruboty .
 
