@@ -17,7 +17,7 @@ MAINTAINER cnosuke
 
 COPY env /app/.env
 
-CMD ["/app/run_ruboty.rb"]
+CMD ["/app/run_ruboty.sh"]
 EOF
 
 % curl https://raw.githubusercontent.com/cnosuke/docker-ruboty/master/app/env.sample -o env
