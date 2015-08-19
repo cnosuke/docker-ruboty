@@ -64,9 +64,11 @@ GEM
     ruboty-japan_weather (0.0.4)
       ruboty
       weather_jp
-    ruboty-redis (0.0.5)
+    ruboty-redis (0.0.6)
       redis
       redis-namespace
+      ruboty
+    ruboty-shonin (0.1.0)
       ruboty
     ruboty-slack (0.1.12)
       ruboty (>= 1.0.4)
@@ -117,6 +119,7 @@ DEPENDENCIES
   ruboty-google_image
   ruboty-japan_weather
   ruboty-redis
+  ruboty-shonin
   ruboty-slack
   ruboty-syoboi_calendar
   ruboty-talk
