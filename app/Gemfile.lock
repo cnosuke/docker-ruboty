@@ -68,7 +68,7 @@ GEM
       redis
       redis-namespace
       ruboty
-    ruboty-shonin (0.1.1)
+    ruboty-shonin (0.1.2)
       ruboty
     ruboty-slack (0.1.12)
       ruboty (>= 1.0.4)
