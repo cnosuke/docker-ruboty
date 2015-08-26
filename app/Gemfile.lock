@@ -63,7 +63,7 @@ GEM
       ruboty (>= 0.2.0)
     ruboty-echo (0.1.0)
       ruboty
-    ruboty-fx (0.3.0)
+    ruboty-fx (0.3.1)
       rest-client
     ruboty-github (0.2.0)
       activesupport
