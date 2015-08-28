@@ -73,6 +73,8 @@ GEM
       redis
       redis-namespace
       ruboty
+    ruboty-response (1.0.2)
+      ruboty
     ruboty-shonin (0.1.2)
       ruboty
     ruboty-slack (0.1.12)
@@ -126,6 +128,7 @@ DEPENDENCIES
   ruboty-github
   ruboty-google_image
   ruboty-redis
+  ruboty-response
   ruboty-shonin
   ruboty-slack
   ruboty-syoboi_calendar
