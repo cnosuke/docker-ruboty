@@ -1,3 +1,10 @@
+GIT
+  remote: git://github.com/cnosuke/ruboty-tenkijp
+  revision: 0ef6578aea4be35a081d8a3e81ce65d9677bc8c4
+  specs:
+    ruboty-tenkijp (0.1.0)
+      tenkijp
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -28,6 +35,7 @@ GEM
     http-cookie (1.0.2)
       domain_name (~> 0.5)
     i18n (0.7.0)
+    jisx0402 (0.1.1)
     json (1.8.3)
     mem (0.1.5)
     mime-types (2.6.1)
@@ -102,6 +110,9 @@ GEM
       faraday_middleware
       hashie
       multi_xml
+    tenkijp (0.1.1)
+      jisx0402
+      rest-client
     thread_safe (0.3.5)
     tiqav (0.0.6)
       addressable
@@ -130,6 +141,7 @@ DEPENDENCIES
   ruboty-slack
   ruboty-syoboi_calendar
   ruboty-talk
+  ruboty-tenkijp!
   ruboty-tiqav
   ruboty-weather
 
