@@ -35,7 +35,7 @@ GEM
     http-cookie (1.0.2)
       domain_name (~> 0.5)
     i18n (0.7.0)
-    jisx0402 (0.1.1)
+    jisx0402 (0.1.2)
     json (1.8.3)
     mem (0.1.5)
     mime-types (2.6.1)
@@ -110,7 +110,7 @@ GEM
       faraday_middleware
       hashie
       multi_xml
-    tenkijp (0.1.1)
+    tenkijp (0.1.2)
       jisx0402
       rest-client
     thread_safe (0.3.5)
