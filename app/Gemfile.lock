@@ -7,13 +7,6 @@ GIT
       ruboty (>= 1.0.4)
       xrc (>= 0.1.8)
 
-GIT
-  remote: git://github.com/cnosuke/ruboty-tenkijp
-  revision: 0ef6578aea4be35a081d8a3e81ce65d9677bc8c4
-  specs:
-    ruboty-tenkijp (0.1.0)
-      tenkijp
-
 GEM
   remote: https://rubygems.org/
   specs:
@@ -44,11 +37,13 @@ GEM
     http-cookie (1.0.2)
       domain_name (~> 0.5)
     i18n (0.7.0)
-    jisx0402 (0.1.2)
+    jisx0402 (1.3.1)
+      msgpack
     json (1.8.3)
     mem (0.1.5)
     mime-types (2.99)
     minitest (5.8.4)
+    msgpack (0.7.5)
     multi_xml (0.5.5)
     multipart-post (2.0.0)
     netrc (0.11.0)
@@ -99,6 +94,8 @@ GEM
     ruboty-talk (0.0.5)
       docomoru (>= 0.0.3)
       ruboty (>= 1.1.0)
+    ruboty-tenkijp (0.1.0)
+      tenkijp
     ruboty-tiqav (0.1.0)
       ruboty
       tiqav
@@ -147,7 +144,7 @@ DEPENDENCIES
   ruboty-slack!
   ruboty-syoboi_calendar
   ruboty-talk
-  ruboty-tenkijp!
+  ruboty-tenkijp
   ruboty-tiqav
   ruboty-weather
 
