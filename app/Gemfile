@@ -1,7 +1,7 @@
 source "https://rubygems.org"
 
 gem 'ruboty'
-gem 'ruboty-slack', git: 'git://github.com/cnosuke/ruboty-slack.git', branch: 'retriable_connection'
+gem 'ruboty-slack_rtm'
 gem 'ruboty-cron'
 gem 'ruboty-alias'
 gem 'ruboty-github'
